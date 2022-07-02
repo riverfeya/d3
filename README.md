@@ -2,19 +2,19 @@
 
 <a href="https://d3js.org"><img src="https://d3js.org/logo.svg" align="left" hspace="10" vspace="6"></a>
 
-**D3** (or **D3.js**) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML. D3 combines powerful visualization and interaction techniques with a data-driven approach to DOM manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual interface for your data.
+**D3** (или **D3.js**) это JavaScript библиотека для визуализации данных использующая веб-стандарты. D3 помогает оживить данные с помощью SVG, Canvas и HTML. D3 сочетает в себе мощные методы визуализации и взаимодействия с управляемым данными подходом к манипулированию DOM, предоставляя вам все возможности современных браузеров и свободу разработки правильного визуального интерфейса для ваших данных.
 
 ## Resources
 
-* [Introduction](https://observablehq.com/@d3/learn-d3)
+* [введение](https://observablehq.com/@d3/learn-d3)
 * [API Reference](https://github.com/d3/d3/blob/main/API.md)
-* [Releases](https://github.com/d3/d3/releases)
-* [Examples](https://observablehq.com/@d3/gallery)
+* [Релизы](https://github.com/d3/d3/releases)
+* [Примеры](https://observablehq.com/@d3/gallery)
 * [Wiki](https://github.com/d3/d3/wiki)
 
-## Installing
+## Установка
 
-If you use npm, `npm install d3`. You can also download the [latest release on GitHub](https://github.com/d3/d3/releases/latest). For vanilla HTML in modern browsers, import D3 from Skypack:
+Если вы используете npm, `npm install d3`. Вы также можете скачать [последний релиз на GitHub](https://github.com/d3/d3/releases/latest). Для ванильного HTML в современных браузерах, импортируйте D3 через Skypack:
 
 ```html
 <script type="module">
@@ -26,7 +26,7 @@ const div = d3.selectAll("div");
 </script>
 ```
 
-For legacy environments, you can load D3’s UMD bundle from an npm-based CDN such as jsDelivr; a `d3` global is exported:
+Для устаревших сред, вы можете скачать D3’s UMD сборку с npm-based CDN таких как jsDelivr; экспортирующих `d3` глобально:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
@@ -37,7 +37,7 @@ const div = d3.selectAll("div");
 </script>
 ```
 
-You can also use the standalone D3 microlibraries. For example, [d3-selection](https://github.com/d3/d3-selection):
+Вы также можете использовать автономные микробиблиотеки D3. Например, [d3-selection](https://github.com/d3/d3-selection):
 
 ```html
 <script type="module">
@@ -49,19 +49,19 @@ const div = selectAll("div");
 </script>
 ```
 
-D3 is written using [ES2015 modules](http://www.2ality.com/2014/09/es6-modules-final.html). Create a custom bundle using Rollup, Webpack, or your preferred bundler. To import D3 into an ES2015 application, either import specific symbols from specific D3 modules:
+D3 написан с использованием [ES2015 модулей](http://www.2ality.com/2014/09/es6-modules-final.html). Создайте собственный пакет с помощью Rollup, Webpack или предпочитаемого вами сборщика. Чтобы импортировать D3 в приложение ES2015, либо импортируйте определенные символы из определенных модулей D3:
 
 ```js
 import {scaleLinear} from "d3-scale";
 ```
 
-Or import everything into a namespace (here, `d3`):
+Или импортировать все в пространство имен (here, `d3`):
 
 ```js
 import * as d3 from "d3";
 ```
 
-Or using dynamic import:
+Или с помощью динамического импорта:
 
 ```js
 const d3 = await import("d3");
